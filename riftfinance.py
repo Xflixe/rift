@@ -6,7 +6,6 @@ from names import get_first_name, get_last_name
 from web3.auto import w3
 from threading import Thread, Lock, active_count
 from os import system
-from ctypes import windll
 from sys import stderr
 from loguru import logger
 from urllib3 import disable_warnings
@@ -21,7 +20,6 @@ logger.add(stderr, format="<white>{time:HH:mm:ss}</white> | <level>{level: <8}</
 def clear(): return system('cls')
 clear()
 print('Telegram Channel - https://t.me/n4z4v0d\n')
-windll.kernel32.SetConsoleTitleW('RiftFinance Auto Reger | by NAZAVOD')
 lock = Lock()
 
 threads = int(input('Threads: '))
